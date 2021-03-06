@@ -57,6 +57,12 @@ jobs:
         cd build
         cmake --build . --config ${{ matrix.build_type }}
         
+    - name: Run profile time TimeVaryingDCMPlannerUnitTests 
+      shell: bash -l {0}
+      run: |
+        cd build
+        ctest -R TimeVaryingDCMPlannerUnitTests -VV -C ${{ matrix.build_type }}
+        
     - name: Test
       shell: bash -l {0}
       run: |
