@@ -106,7 +106,7 @@ struct TimeVaryingDCMPlanner::Impl
      */
     struct OptimizationSettings
     {
-        unsigned long solverVerbosity{5}; /**< Verbosity of ipopt */
+        unsigned long solverVerbosity{10}; /**< Verbosity of ipopt */
         std::string ipoptLinearSolver{"mumps"}; /**< Linear solved used by ipopt */
 
         double plannerSamplingTime; /**< Sampling time of the planner in seconds */
