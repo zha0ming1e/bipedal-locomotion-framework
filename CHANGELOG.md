@@ -7,6 +7,7 @@ All notable changes to this project are documented in this file.
 
 ### Changed
 - Update the `IK tutorial` to use `QPInverseKinematics::build` (https://github.com/ami-iit/bipedal-locomotion-framework/pull/621)
+- Handle case where no FT sensors are specified to split the model (https://github.com/ami-iit/bipedal-locomotion-framework/pull/625)
 - General restructure of the `ContactDetector`and the derived classes (`SchmittTriggerDetector` and `FixedFootDetector`) (https://github.com/ami-iit/bipedal-locomotion-framework/pull/624)
   Thanks to this refactory the `FixedFootDetector` usage becomes similar to the others `advanceable`.
   Indeed now `FixedFootDetector::advace()` considers the input set by the user and provides the corresponding output.
